@@ -16,7 +16,7 @@
 
 import { Theme } from '@material-ui/core';
 
-export type BackstageTheme = Theme & {
+export type BackstageThemeType = Theme & {
   palette: {
     status: {
       ok: string;

@@ -222,7 +222,7 @@ const createOverrides = theme => {
       MuiButton: {
         text: {
           // Text buttons have less padding by default, but we want to keep the original padding
-          padding: null,
+          padding: undefined,
         },
       },
       MuiChip: {
@@ -260,4 +260,5 @@ const BackstageThemeLight = {
 
 // Temporary workaround for files incorrectly importing the theme directly
 export const V1 = BackstageThemeLight;
+
 export default BackstageThemeLight;

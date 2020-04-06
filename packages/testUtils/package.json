@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/spotify/backstage",
-    "directory": "packages/core"
+    "directory": "packages/testUtils"
   },
   "keywords": [
     "backstage"
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@backstage/cli": "^0.1.1-alpha.1",
-    "@backstage/core": "^0.1.1-alpha.1",
+    "@backstage/theme": "^0.1.1-alpha.1",
     "@material-ui/core": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -39,7 +39,7 @@
     "react-router-dom": "^5.1.2"
   },
   "peerDependencies": {
-    "@backstage/core": "^0.1.1-alpha.1",
+    "@backstage/theme": "^0.1.1-alpha.1",
     "@material-ui/core": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

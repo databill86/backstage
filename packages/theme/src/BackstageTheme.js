@@ -211,7 +211,7 @@ const createOverrides = theme => {
       MuiButton: {
         text: {
           // Text buttons have less padding by default, but we want to keep the original padding
-          padding: null,
+          padding: undefined,
         },
       },
       MuiChip: {
@@ -242,7 +242,10 @@ const extendedTheme = createMuiTheme(extendedThemeConfig);
 // V1 theming
 // https://material-ui-next.com/customization/themes/
 // For CSS it is advised to use JSS, see https://material-ui-next.com/customization/css-in-js/
-const BackstageTheme = { ...extendedTheme, ...createOverrides(extendedTheme) };
+const BackstageTheme = {
+  ...extendedTheme,
+  ...createOverrides(extendedTheme),
+};
 
 // Temporary workaround for files incorrectly importing the theme directly
 export const V1 = BackstageTheme;

@@ -15,11 +15,11 @@
  */
 
 import { makeStyles } from '@material-ui/core';
+import { BackstageThemeType } from '@backstage/theme';
 import classNames from 'classnames';
 import React, { FC } from 'react';
-import { BackstageTheme } from '../../theme/theme';
 
-const useStyles = makeStyles((theme: BackstageTheme) => ({
+const useStyles = makeStyles<BackstageThemeType>(theme => ({
   status: {
     width: 12,
     height: 12,

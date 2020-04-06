@@ -17,12 +17,13 @@
 import React, { Fragment, ReactNode, CSSProperties, FC } from 'react';
 import Helmet from 'react-helmet';
 import { Typography, Tooltip, makeStyles } from '@material-ui/core';
+import { BackstageThemeType } from '@backstage/theme';
+
 import { Theme } from '../Page/Page';
 // import { Link } from 'shared/components';
-import { BackstageTheme } from '../../theme/theme';
 import Waves from './Waves';
 
-const useStyles = makeStyles<BackstageTheme>(theme => ({
+const useStyles = makeStyles<BackstageThemeType>(theme => ({
   header: {
     gridArea: 'pageHeader',
     padding: theme.spacing(3),
